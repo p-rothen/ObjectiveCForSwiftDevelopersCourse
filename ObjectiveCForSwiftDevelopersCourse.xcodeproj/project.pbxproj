@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB7308781E4D11DD00C98659 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7308771E4D11DD00C98659 /* Book.m */; };
 		EBA85E9E1E4B39A9002CD821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA85E9D1E4B39A9002CD821 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB7308761E4D11DD00C98659 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		EB7308771E4D11DD00C98659 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		EBA85E9A1E4B39A9002CD821 /* ObjectiveCForSwiftDevelopersCourse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveCForSwiftDevelopersCourse; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA85E9D1E4B39A9002CD821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				EBA85E9D1E4B39A9002CD821 /* main.m */,
+				EB7308761E4D11DD00C98659 /* Book.h */,
+				EB7308771E4D11DD00C98659 /* Book.m */,
 			);
 			path = ObjectiveCForSwiftDevelopersCourse;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7308781E4D11DD00C98659 /* Book.m in Sources */,
 				EBA85E9E1E4B39A9002CD821 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 				EBA85EA31E4B39A9002CD821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
