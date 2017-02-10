@@ -10,6 +10,8 @@
 		EB7308781E4D11DD00C98659 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7308771E4D11DD00C98659 /* Book.m */; };
 		EBA85E9E1E4B39A9002CD821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA85E9D1E4B39A9002CD821 /* main.m */; };
 		EBED291A1E4E621100F6DF1A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED29191E4E621100F6DF1A /* Person.m */; };
+		EBED29201E4E643800F6DF1A /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED291F1E4E643800F6DF1A /* RPSGame.m */; };
+		EBED29241E4E64C500F6DF1A /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED29231E4E64C500F6DF1A /* RPSTurn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		EBA85E9D1E4B39A9002CD821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBED29181E4E621100F6DF1A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		EBED29191E4E621100F6DF1A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EBED291E1E4E643800F6DF1A /* RPSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		EBED291F1E4E643800F6DF1A /* RPSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
+		EBED29221E4E64C500F6DF1A /* RPSTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		EBED29231E4E64C500F6DF1A /* RPSTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +96,38 @@
 		EBED291C1E4E621C00F6DF1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBED291D1E4E641B00F6DF1A /* RPS */,
 				EBED29171E4E61D900F6DF1A /* Book */,
 				EBED291B1E4E621400F6DF1A /* Person */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		EBED291D1E4E641B00F6DF1A /* RPS */ = {
+			isa = PBXGroup;
+			children = (
+				EBED29251E4E64CB00F6DF1A /* RPSTurn */,
+				EBED29211E4E643D00F6DF1A /* RPSGame */,
+			);
+			name = RPS;
+			sourceTree = "<group>";
+		};
+		EBED29211E4E643D00F6DF1A /* RPSGame */ = {
+			isa = PBXGroup;
+			children = (
+				EBED291E1E4E643800F6DF1A /* RPSGame.h */,
+				EBED291F1E4E643800F6DF1A /* RPSGame.m */,
+			);
+			name = RPSGame;
+			sourceTree = "<group>";
+		};
+		EBED29251E4E64CB00F6DF1A /* RPSTurn */ = {
+			isa = PBXGroup;
+			children = (
+				EBED29221E4E64C500F6DF1A /* RPSTurn.h */,
+				EBED29231E4E64C500F6DF1A /* RPSTurn.m */,
+			);
+			name = RPSTurn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +189,8 @@
 				EBED291A1E4E621100F6DF1A /* Person.m in Sources */,
 				EB7308781E4D11DD00C98659 /* Book.m in Sources */,
 				EBA85E9E1E4B39A9002CD821 /* main.m in Sources */,
+				EBED29241E4E64C500F6DF1A /* RPSTurn.m in Sources */,
+				EBED29201E4E643800F6DF1A /* RPSGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
