@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPSTurn.h"
 
 @interface RPSGame : NSObject
-
+//@property (nonatomic)
 @end
