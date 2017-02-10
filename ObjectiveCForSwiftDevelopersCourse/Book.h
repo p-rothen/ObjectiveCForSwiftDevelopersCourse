@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 @interface Book : NSObject
 @property (nonatomic) NSString *title;
-@property (nonatomic) NSString *author;
+@property (nonatomic) Person *author;
 @property (nonatomic) int year;
 
 -(instancetype) initWithTitle:(NSString*)title
-                       author:(NSString*)author
+                       author:(Person*)author
                          year:(int)year;
 @end
