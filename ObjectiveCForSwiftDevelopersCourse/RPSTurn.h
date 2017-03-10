@@ -14,5 +14,7 @@ typedef NS_ENUM(NSInteger, Move) {
 
 @interface RPSTurn : NSObject
 @property (nonatomic) Move move;
+
+-(instancetype) initWithMove:(Move) move;
 @end
 

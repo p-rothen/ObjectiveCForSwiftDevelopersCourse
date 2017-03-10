@@ -10,5 +10,8 @@
 #import "RPSTurn.h"
 
 @interface RPSGame : NSObject
-//@property (nonatomic)
+@property (nonatomic) RPSTurn *firstTurn;
+@property (nonatomic) RPSTurn *secondTurn;
+-(instancetype) initWithFirstTurn:(RPSTurn*)firstTurn
+                   secondTurn:(RPSTurn*)secondTurn;
 @end
