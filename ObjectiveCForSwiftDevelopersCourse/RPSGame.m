@@ -9,7 +9,8 @@
 #import "RPSGame.h"
 
 @implementation RPSGame
--(instancetype) initWithFirstTurn:(RPSTurn *)firstTurn secondTurn:(RPSTurn *)secondTurn {
+-(instancetype) initWithFirstTurn:(RPSTurn *)firstTurn
+                       secondTurn:(RPSTurn *)secondTurn {
     self = [super init];
     
     if (self) {
@@ -18,5 +19,11 @@
     }
     
     return self;
+}
+-(RPSTurn*) winner {
+    return [_firstTurn defeats:_secondTurn] ? _firstTurn : _secondTurn;
+}
+-(RPSTurn*) loser {
+    return [_firstTurn defeats:_secondTurn] ? _secondTurn : _firstTurn;
 }
 @end

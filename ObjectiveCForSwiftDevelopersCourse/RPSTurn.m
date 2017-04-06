@@ -16,10 +16,54 @@
     }
     return self;
 }
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        _move = [self generateMove];
+    }
+    return self;
+}
 -(Move)generateMove {
-    return ROCK;
+    NSUInteger randomNumber = arc4random_uniform(3);
+    switch (randomNumber) {
+        case 0:
+            return ROCK;
+            break;
+        case 1:
+            return PAPER;
+            break;
+        case 2:
+            return SCISSOR;
+            break;
+        default:
+            return INVALID;
+            break;
+    }
 }
 -(BOOL)defeats:(RPSTurn *)turn {
-    return false;
+    if ((self.move == PAPER && turn.move == ROCK) ||
+        (self.move == SCISSOR && turn.move == PAPER) ||
+        (self.move == ROCK && turn.move == SCISSOR)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+- (NSString *)description
+{
+    switch (self.move) {
+        case ROCK:
+            return @"Rock";
+            break;
+        case SCISSOR:
+            return @"Scissor";
+            break;
+        case PAPER:
+            return @"Paper";
+            break;
+        default:
+            return @"Invalid";
+            break;
+    }
 }
 @end
