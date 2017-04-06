@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB4380441E8C107B000C28FE /* RPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4380431E8C107B000C28FE /* RPSController.m */; };
 		EB7308781E4D11DD00C98659 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7308771E4D11DD00C98659 /* Book.m */; };
 		EBA85E9E1E4B39A9002CD821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA85E9D1E4B39A9002CD821 /* main.m */; };
 		EBED291A1E4E621100F6DF1A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED29191E4E621100F6DF1A /* Person.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB4380421E8C107B000C28FE /* RPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSController.h; sourceTree = "<group>"; };
+		EB4380431E8C107B000C28FE /* RPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSController.m; sourceTree = "<group>"; };
 		EB7308761E4D11DD00C98659 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		EB7308771E4D11DD00C98659 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		EBA85E9A1E4B39A9002CD821 /* ObjectiveCForSwiftDevelopersCourse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveCForSwiftDevelopersCourse; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB4380451E8C1082000C28FE /* RPSController */ = {
+			isa = PBXGroup;
+			children = (
+				EB4380421E8C107B000C28FE /* RPSController.h */,
+				EB4380431E8C107B000C28FE /* RPSController.m */,
+			);
+			name = RPSController;
+			sourceTree = "<group>";
+		};
 		EBA85E911E4B39A9002CD821 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 			children = (
 				EBED29251E4E64CB00F6DF1A /* RPSTurn */,
 				EBED29211E4E643D00F6DF1A /* RPSGame */,
+				EB4380451E8C1082000C28FE /* RPSController */,
 			);
 			name = RPS;
 			sourceTree = "<group>";
@@ -191,6 +204,7 @@
 				EBA85E9E1E4B39A9002CD821 /* main.m in Sources */,
 				EBED29241E4E64C500F6DF1A /* RPSTurn.m in Sources */,
 				EBED29201E4E643800F6DF1A /* RPSGame.m in Sources */,
+				EB4380441E8C107B000C28FE /* RPSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

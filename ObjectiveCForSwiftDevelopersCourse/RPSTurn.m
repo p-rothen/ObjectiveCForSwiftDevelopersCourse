@@ -16,4 +16,10 @@
     }
     return self;
 }
+-(Move)generateMove {
+    return ROCK;
+}
+-(BOOL)defeats:(RPSTurn *)turn {
+    return false;
+}
 @end
